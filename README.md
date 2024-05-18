@@ -78,8 +78,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Solution URL](https://www.frontendmentor.io/solutions/newsletter-sign-up-form-with-success-message-lCDyxSazl4)
+- Live Site URL: [Live Site URL](https://frontendmentor-ilyesab.github.io/newsletter-sign-up-with-success-message/)
 
 ## My process
 
@@ -96,14 +96,13 @@ Users should be able to:
 
 ### What I learned
 
-The Project react code was simple to implement. It consists of two components: **Signup Form** and **Thank You**. The root component uses the `useState hook` to keep track of which state is being shown to the user. the state is typed as a union of string literal types: `"initial" | "error" | "success"`.
-and another `useState` hook to keep track of the email.
+The Project react code was simple to implement. It consists of two components: **Signup Form** and **Thank You**. The root component uses the `useState` hook to keep track of which state is being shown to the user. the state is typed as a union of string literal types: `"initial" | "error" | "success"`. and another `useState` hook to keep track of the email.
 
 I had setup one handler for the submit event. if the email is valid the state is set to be `success` which renders the **Thank You** Component. and if it's not the state is set to `error` which adds a modifier class to the form so we can style it for the error state.
 
 The email state is passed to both components. for the **Thank you** component to display the email in it's content. and for the **Signup Form** Component it is passed along with a handler to make the input controlled. so while the user is typing the email state is being updated.
 
-Finally Another handler is setup on the dismiss button in the **Thank You** Component which sets the state back to `initial` when clicked.
+Finally another handler is setup on the dismiss button in the **Thank You** Component which sets the state back to `initial` when clicked.
 
 ### Continued development
 
